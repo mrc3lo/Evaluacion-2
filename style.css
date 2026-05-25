@@ -1,0 +1,393 @@
+/* =========================
+   RESET
+========================= */
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* =========================
+   VARIABLES
+========================= */
+
+:root{
+
+    --color-fondo: #f4f6f9;
+    --color-blanco: #ffffff;
+
+    --color-primario: #1f3c88;
+    --color-secundario: #4b5563;
+
+    --color-borde: #d1d5db;
+    --color-hover: #163172;
+
+    --color-texto: #111827;
+
+    --sombra: 0 10px 25px rgba(0,0,0,0.08);
+
+}
+
+/* =========================
+   BODY
+========================= */
+
+body{
+
+    font-family: Arial, Helvetica, sans-serif;
+
+    background-color: var(--color-fondo);
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    min-height: 100vh;
+
+    padding: 20px;
+}
+
+/* =========================
+   CONTENEDOR
+========================= */
+
+.contenedor{
+
+    background-color: var(--color-blanco);
+
+    width: 100%;
+    max-width: 900px;
+
+    padding: 40px;
+
+    border-radius: 14px;
+
+    box-shadow: var(--sombra);
+
+    overflow-x: auto;
+}
+
+/* =========================
+   TITULO
+========================= */
+
+h1{
+
+    text-align: center;
+
+    color: var(--color-primario);
+
+    margin-bottom: 30px;
+
+    font-size: 2rem;
+}
+
+/* =========================
+   FORMULARIO
+========================= */
+
+form{
+
+    display: flex;
+    flex-direction: column;
+
+    gap: 20px;
+}
+
+/* =========================
+   CAMPOS
+========================= */
+
+.campo{
+
+    display: flex;
+    flex-direction: column;
+}
+
+/* =========================
+   LABELS
+========================= */
+
+label{
+
+    margin-bottom: 8px;
+
+    color: var(--color-secundario);
+
+    font-weight: bold;
+
+    font-size: 0.95rem;
+}
+
+/* =========================
+   INPUTS
+========================= */
+
+input{
+
+    padding: 14px;
+
+    border: 1px solid var(--color-borde);
+
+    border-radius: 8px;
+
+    font-size: 1rem;
+
+    outline: none;
+
+    transition: 0.3s;
+}
+
+/* =========================
+   EFECTO FOCUS
+========================= */
+
+input:focus{
+
+    border-color: var(--color-primario);
+
+    box-shadow: 0 0 8px rgba(31,60,136,0.2);
+}
+
+/* =========================
+   BOTON
+========================= */
+
+button{
+
+    background-color: var(--color-primario);
+
+    color: white;
+
+    border: none;
+
+    padding: 14px;
+
+    border-radius: 8px;
+
+    font-size: 1rem;
+
+    font-weight: bold;
+
+    cursor: pointer;
+
+    transition: 0.3s;
+}
+
+/* =========================
+   HOVER BOTON
+========================= */
+
+button:hover{
+
+    background-color: var(--color-hover);
+}
+
+/* =========================
+   RESPONSIVE
+========================= */
+
+@media(max-width: 600px){
+
+    .contenedor{
+
+        padding: 25px;
+    }
+
+    h1{
+
+        font-size: 1.6rem;
+    }
+}
+
+/* =========================
+   MENSAJES
+========================= */
+
+#mensaje{
+
+    margin-top: 15px;
+
+    text-align: center;
+
+    font-weight: bold;
+}
+
+/* ERROR */
+
+.error{
+
+    color: #b00020;
+}
+
+/* EXITO */
+
+.exito{
+
+    color: #008f5a;
+}
+
+/* =========================
+   TABLA
+========================= */
+
+table{
+
+    width: 100%;
+
+    border-collapse: collapse;
+
+    margin-top: 20px;
+
+    min-width: 700px;
+}
+
+/* ENCABEZADOS */
+
+th{
+
+    background-color: var(--color-primario);
+
+    color: white;
+
+    padding: 12px;
+}
+
+/* CELDAS */
+
+td{
+
+    padding: 12px;
+
+    border-bottom: 1px solid #ddd;
+
+    text-align: center;
+}
+
+/* EFECTO HOVER */
+
+tr:hover{
+
+    background-color: #f1f5f9;
+}
+
+/* TITULO TABLA */
+
+h2{
+
+    margin-top: 25px;
+
+    margin-bottom: 10px;
+
+    color: var(--color-primario);
+
+    text-align: center;
+}
+
+/* LINEA */
+
+hr{
+
+    margin-top: 30px;
+
+    border: none;
+
+    border-top: 1px solid #ddd;
+}
+
+/* =========================
+   BUSCADOR
+========================= */
+
+.buscador{
+
+    margin-bottom: 20px;
+}
+
+/* INPUT BUSQUEDA */
+
+#busqueda{
+
+    width: 100%;
+
+    padding: 14px;
+
+    border: 1px solid var(--color-borde);
+
+    border-radius: 8px;
+
+    font-size: 1rem;
+
+    outline: none;
+
+    transition: 0.3s;
+}
+
+/* EFECTO FOCUS */
+
+#busqueda:focus{
+
+    border-color: var(--color-primario);
+
+    box-shadow: 0 0 8px rgba(31,60,136,0.2);
+}
+
+/* =========================
+   BOTON ELIMINAR
+========================= */
+
+.btn-eliminar{
+
+    background-color: #dc2626;
+
+    color: white;
+
+    border: none;
+
+    padding: 8px 10px;
+
+    border-radius: 6px;
+
+    cursor: pointer;
+
+    transition: 0.3s;
+
+    font-size: 0.9rem;
+
+    white-space: nowrap;
+}
+
+/* HOVER */
+
+.btn-eliminar:hover{
+
+    background-color: #b91c1c;
+}
+
+@media(max-width: 768px){
+
+    .contenedor{
+
+        padding: 20px;
+    }
+
+    table{
+
+        font-size: 0.9rem;
+    }
+
+    th,
+    td{
+
+        padding: 10px;
+    }
+
+    .btn-eliminar{
+
+        padding: 6px 8px;
+
+        font-size: 0.8rem;
+    }
+
+}

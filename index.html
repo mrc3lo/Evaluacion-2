@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Formulario Corporativo</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <main class="contenedor">
+
+        <h1>Registro de Empleado</h1>
+
+        <form id="formulario">
+
+            <!-- Nombre -->
+            <div class="campo">
+                <label for="nombre">Nombre</label>
+
+                <input 
+                    type="text"
+                    id="nombre"
+                    name="nombre"
+                    placeholder="Ingrese su nombre"
+                    required
+                >
+            </div>
+
+            <!-- Apellido -->
+            <div class="campo">
+                <label for="apellido">Apellido</label>
+
+                <input 
+                    type="text"
+                    id="apellido"
+                    name="apellido"
+                    placeholder="Ingrese su apellido"
+                    required
+                >
+            </div>
+
+            <!-- Cargo -->
+            <div class="campo">
+                <label for="cargo">Cargo</label>
+
+                <input 
+                    type="text"
+                    id="cargo"
+                    name="cargo"
+                    placeholder="Ingrese su cargo"
+                    required
+                >
+            </div>
+
+            <!-- Correo -->
+            <div class="campo">
+                <label for="correo">Correo electrónico corporativo</label>
+
+                <input 
+                    type="email"
+                    id="correo"
+                    name="correo"
+                    placeholder="correo@empresa.com"
+                    required
+                >
+            </div>
+
+            <!-- Botón -->
+            <button type="submit">
+                Registrar
+            </button>
+
+            <div id="mensaje"></div>
+
+            <hr>
+
+            <h2>Listado de colaboradores</h2>
+
+            <div class="buscador">
+
+                <input 
+                    type="text"
+                    id="busqueda"
+                    placeholder="Buscar por nombre o cargo..."
+                >
+
+            </div>
+
+            <table>
+
+                <thead>
+                    <tr>
+                        <th>Nombre</th>
+                        <th>Apellido</th>
+                        <th>Cargo</th>
+                        <th>Correo</th>
+                        <th>Acciones</th>
+                    </tr>
+                </thead>
+
+                <tbody id="tablaColaboradores">
+
+                </tbody>
+
+            </table>
+
+        </form>
+
+    </main>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
